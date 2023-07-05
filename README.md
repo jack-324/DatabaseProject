@@ -11,6 +11,13 @@ W przypadku wyboru wersji online, należy w pliku hasla.txt wprowadzic odpowiedn
 
 W przypadku wersji offline, domyślnie jest utworzona baza danych przykładowa (baza.db)
 
+Instalacja aplikacji
+=========================
+
+W celu instalacji aplikacji pobrać repozytorium, a potem wybrać interesującą nas wersję
+
+Wersja offline korzysta z sqlite, a wersja online korzysta z psycopg
+
 
 Korzystanie z aplikacji
 =========================
@@ -29,8 +36,8 @@ Pierwsze użycie
 Na samym początku potrzebujemy utworzyć bazę danych.
 Wywołujemy funkcję *GenerateStructure()* aby utworzył nam szkielet bazy
 	
-   import GenTestDataBase
-   GenTestDataBase.GenerateStructure()
+     import GenTestDataBase
+     GenTestDataBase.GenerateStructure()
 
 	
 	Jeżeli chcemy zobaczyć bazę z testowymi danymi możemy użyć funkcji
@@ -44,8 +51,10 @@ Aby zbierać dane i je zapisać w formacie, który pozwoli nam łatwo je dodać 
 
 
 należy skorzystać z *ClientScanner()*
-   import ClientModule
-   ClientModule.ClientScanner()
+
+
+	import ClientModule
+        ClientModule.ClientScanner()
 
 Dzięki tej opcji możemy interaktywnie dodawać dane z wykorzystaniem interfejsu tekstowego
 
