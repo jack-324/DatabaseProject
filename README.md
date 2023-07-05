@@ -20,8 +20,6 @@ Korzystanie z aplikacji
 	
 	Wystarczy uruchomić odpowiednią bibliotekę poleceniem
 	
-	.. code-block::
-	
 		python modul.py
 
 
