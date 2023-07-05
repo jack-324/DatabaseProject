@@ -27,7 +27,7 @@ Korzystanie z aplikacji
 	
 	Wystarczy uruchomić odpowiednią bibliotekę poleceniem
 	
-		python modul.py
+	  python modul.py
 
 
 Pierwsze użycie
@@ -39,7 +39,7 @@ Wywołujemy funkcję GenerateStructure() aby utworzył nam szkielet bazy
      import GenTestDataBase
      GenTestDataBase.GenerateStructure()
 
-	
+
 	Jeżeli chcemy zobaczyć bazę z testowymi danymi możemy użyć funkcji
 	
 	GenerateTestTables() zamiast GenerateStructure()
@@ -76,7 +76,7 @@ Możemy dodać dane do bazy w dwa różne sposoby:
 
 	1. Import pliku
 	
-	2. Ręcznie dodawanie za pomocą funkcji *ServerManagment()*
+	2. Ręcznie dodawanie za pomocą funkcji ServerManagment()
 	
 Aby dodać dane z pliku należy:
 
