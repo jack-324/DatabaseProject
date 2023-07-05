@@ -34,7 +34,7 @@ Pierwsze użycie
 -------------------------
 
 Na samym początku potrzebujemy utworzyć bazę danych.
-Wywołujemy funkcję *GenerateStructure()* aby utworzył nam szkielet bazy
+Wywołujemy funkcję GenerateStructure() aby utworzył nam szkielet bazy
 	
      import GenTestDataBase
      GenTestDataBase.GenerateStructure()
@@ -42,7 +42,7 @@ Wywołujemy funkcję *GenerateStructure()* aby utworzył nam szkielet bazy
 	
 	Jeżeli chcemy zobaczyć bazę z testowymi danymi możemy użyć funkcji
 	
-	*GenerateTestTables()* zamiast *GenerateStructure()*
+	GenerateTestTables() zamiast GenerateStructure()
 
 Zbieranie danych
 -------------------------
@@ -50,7 +50,7 @@ Zbieranie danych
 Aby zbierać dane i je zapisać w formacie, który pozwoli nam łatwo je dodać do bazy danych
 
 
-należy skorzystać z *ClientScanner()*
+należy skorzystać z ClientScanner()
 
 
 	import ClientModule
@@ -80,9 +80,9 @@ Możemy dodać dane do bazy w dwa różne sposoby:
 	
 Aby dodać dane z pliku należy:
 
-	1. Zaimportować *ImportModule*
+	1. Zaimportować ImportModule
 	
-	2. Wywołać funkcję *ImportFileModule(plik)*
+	2. Wywołać funkcję ImportFileModule(plik)
 	
 		Jeżeli nie podamy ścieżki do pliku w parametrze ``plik`` to funkcja nas zapyta o nazwę pliku.
 		
@@ -109,9 +109,9 @@ Aby zobaczyć dane, bądź je zmodyfikować możemy użyć funkcji *ServerManagm
 
 Aby to było możliwe należy:
 
-	1. Zaimportować *ServerFunctions*
+	1. Zaimportować ServerFunctions
 	
-	2. Wywołać funkcję *ServerManagment()*
+	2. Wywołać funkcję ServerManagment()
 	
 	import ServerFunctions
 	ServerFunctions.ServerManagment()
