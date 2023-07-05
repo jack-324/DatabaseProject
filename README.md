@@ -11,8 +11,9 @@ W przypadku wyboru wersji online, należy w pliku hasla.txt wprowadzic odpowiedn
 
 W przypadku wersji offline, domyślnie jest utworzona baza danych przykładowa (baza.db)
 
-=========================
+
 Korzystanie z aplikacji
+=========================
 
 	
 	Możliwe jest wykorzystanie programu bez konieczności załączania modułów
