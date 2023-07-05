@@ -16,8 +16,6 @@ W przypadku wersji offline, domyślnie jest utworzona baza danych przykładowa (
 Korzystanie z aplikacji
 =========================
 
-
-.. note::
 	
 	Możliwe jest wykorzystanie programu bez konieczności załączania modułów
 	
@@ -28,27 +26,20 @@ Korzystanie z aplikacji
 		python modul.py
 
 
--------------------------
 Pierwsze użycie
 -------------------------
 
 Na samym początku potrzebujemy utworzyć bazę danych.
 Wywołujemy funkcję *GenerateStructure()* aby utworzył nam szkielet bazy
-
-.. code-block:: python
-   :linenos:
-   :emphasize-lines: 2
 	
    import GenTestDataBase
    GenTestDataBase.GenerateStructure()
 
-.. note::
 	
 	Jeżeli chcemy zobaczyć bazę z testowymi danymi możemy użyć funkcji
 	
 	*GenerateTestTables()* zamiast *GenerateStructure()*
 
--------------------------
 Zbieranie danych
 -------------------------
 
