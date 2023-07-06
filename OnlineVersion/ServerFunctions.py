@@ -46,7 +46,7 @@ def Zarzadz_produktem(c):
         elif inp == str(1):
             inp = input("Podaj kod:")
             try:
-                c.execute("SELECT * FROM Produkty,Pracownicy WHERE kod_kreskowy ="+str(inp)+" AND Pracownicy.ID_pracownika = Produkty.ID_Pracownika;")
+                c.execute("SELECT * FROM Produkty,Pracownicy WHERE kod_kreskowy = "+str(inp)+" AND Pracownicy.ID_pracownika = Produkty.ID_Pracownika;")
                 x = list(c.fetchone())
                 for a in range(len(x) - 1):
                     if x[a] == None:
@@ -72,7 +72,7 @@ def Zarzadz_produktem(c):
         elif inp == str(2):
             inp = input("Podaj kod:")
             try:
-                c.execute("SELECT * FROM Produkty,Pracownicy WHERE ID_produktu ="+str(inp)+" AND Pracownicy.ID_pracownika = Produkty.ID_Pracownika;")
+                c.execute("SELECT * FROM Produkty,Pracownicy WHERE ID_produktu = "+str(inp)+" AND Pracownicy.ID_pracownika = Produkty.ID_Pracownika;")
 
                 x = list(c.fetchone())
                 for a in range(len(x) - 1):
@@ -99,7 +99,7 @@ def Zarzadz_produktem(c):
         elif inp == str(3):
             inp = input("Podaj kod:")
             try:
-                c.execute("DELETE FROM Produkty WHERE kod_kreskowy ="+str(inp))
+                c.execute("DELETE FROM Produkty WHERE kod_kreskowy = "+str(inp))
                 if c.rowcount < 1:
                     print("Nie odnaleziono podanego produktu!")
                     raise Error("Nie odnaleziono podanych danych")
@@ -112,7 +112,7 @@ def Zarzadz_produktem(c):
         elif inp == str(4):
             inp = input("Podaj kod:")
             try:
-                c.execute("DELETE FROM Produkty WHERE ID_produktu ="+str(inp))
+                c.execute("DELETE FROM Produkty WHERE ID_produktu = "+str(inp))
                 if c.rowcount < 1:
                     print("Nie odnaleziono podanego produktu!")
                     raise Error("Nie odnaleziono podanych danych")
